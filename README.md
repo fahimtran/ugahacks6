@@ -7,7 +7,7 @@
 ***
 ***
 *** To avoid retyping too much info. Do a search and replace for the following:
-*** fahimtran, ugahacks6, fahimtran, fahimfjeylanitran@gmail.com, project_title, project_description
+*** fahimtran, ugahacks6, fahimtran, priceengine1@gmail.com, Price Engine, project_description
 -->
 
 
@@ -27,7 +27,7 @@
 <br />
 <p align="center">
 
-  <h3 align="center">ugahacks6</h3>
+  <h3 align="center">Price Engine</h3>
 
   <p align="center">
     project_description
@@ -136,7 +136,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@fahimtran](https://twitter.com/fahimtran)
+Your Name - [@fahimtran](https://twitter.com/fahimtran) - priceengine1@gmail.com
 
 Project Link: [https://github.com/fahimtran/ugahacks6](https://github.com/fahimtran/ugahacks6)
 
