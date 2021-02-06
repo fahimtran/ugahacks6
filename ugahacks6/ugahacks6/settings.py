@@ -27,6 +27,7 @@ SECRET_KEY = 'ajeswf90f7j=^z(li9gm&kz97keva0q@i&usemo@k7ynssxblo'
 DEBUG = True
 
 ALLOWED_HOSTS = [
+    '127.0.0.1',
     'phonic-monolith-304001.ue.r.appspot.com',
     'priceengine.online',
     'www.priceengine.online',
