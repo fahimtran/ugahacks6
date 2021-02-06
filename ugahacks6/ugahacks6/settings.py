@@ -28,7 +28,8 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
     'phonic-monolith-304001.ue.r.appspot.com',
-    'priceengline.online'
+    'priceengine.online',
+    'www.priceengine.online',
 ]
 
 
