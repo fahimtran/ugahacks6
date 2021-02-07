@@ -6,3 +6,6 @@ from django.http import HttpResponse
 def home(request):
     return render(request, '../templates/home.html')
 
+
+def search(request):
+    pass
