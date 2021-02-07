@@ -18,22 +18,28 @@
 
         <main>
             <img class="logo" src="{% static 'resources/logo.png' %}">
-            <form class="example text-center" >
-                <input type="text" placeholder="Search.." name="search">
-                <button class="fa fa-search"></button>
+            <form class="example text-center">
+                <input type="text" placeholder="Search.." name="query" id="search">
+                <button class="fa fa-search" id="searchButton"></button>
             </form>
 
             <div class="query">
-                <img src="#">
+                <img src="#" id="img1">
+                <img src="#" id="img2">
+                <img src="#" id="img3">
                 <span class="float">
-                    <h5>Searched Item Name</h5>
+                    <h5 id="itemName"></h5>
 
-                    <h5>Minimum Price:
-                        <a href="#">$</a>
+                    <h5>Maximum Price:
+                        <a href="#" id="maxPrice">$</a>
+                    </h5>
+
+                    <h5 >Minimum Price:
+                        <a href="#" id="minPrice">$</a>
                     </h5>
 
                     <h5>Average Price:
-                        <a href="#">$</a>
+                        <a href="#" id="avgPrice">$</a>
                     </h5>
                 </span>
             </div>
@@ -41,6 +47,49 @@
 
         </body>
     </div>
+<script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+<script src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+        google.load('search', 1);
+        google.setOnLoadCallback(OnLoad);
+        var search;
+        var keyword;
+
+        function OnLoad() {
+            search = new google.search.ImageSearch();
+            search.setSearchCompleteCallback(this, searchComplete, null);
+            search.execute(keyword);
+        }
+
+        function searchComplete() {
+            if (search.results && search.results.length > 0) {
+                for (var i = 1; i <= 3; i++) {
+                    var rand = Math.floor(Math.random() * search.results.length);
+                    $("#img"+i).src = search.results[rand]['url'];
+                }
+            }
+            $(".query").style.display = "block";
+        }
+
+        $("#searchButton").click(function() {
+           keyword = $("#search").val();
+           OnLoad();
+           // $.ajax({
+           //     type: "POST",
+           //     url: '/?query=' + query,
+           //     data: {
+           //         'query': query
+           //     },
+           //     dataType: 'json',
+           //     success: function(data) {
+           //         console.log(data);
+           //     },
+           //     error: function() {
+           //         alert("Query failed.");
+           //     }
+           // });
 
 
+        });
+    </script>
 </html>
