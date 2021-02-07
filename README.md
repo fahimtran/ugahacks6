@@ -30,7 +30,6 @@
   <h3 align="center">Price Engine</h3>
 
   <p align="center">
-    project_description
     <br />
     <br />
     <a href="https://github.com/fahimtran/ugahacks6">View Demo</a>
