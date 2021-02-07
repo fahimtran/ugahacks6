@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        {% load static %}
+        <title>PriceEngine</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="{% static 'home/css/main.css' %}">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <header>
+            <a href="#" target="blank" class="fa fa-github fa-2x" id="icons"></a>
+        </header>
+
+        <main>
+            <img class="text-center" src="{% static 'resources/logo.png' %}">
+            <form class="example text-center" >
+                <input type="text" placeholder="Search.." name="search">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+
+            <div class="query">
+                <img src="#">
+                <div class="float">
+                    <p>Minimum Price:
+                        <a href="#">$</a>
+                    </p>
+
+                    <p>Average Price:
+                        <a href="#">$</a>
+                    </p>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+        </footer>
+    </body>
+
+</html>

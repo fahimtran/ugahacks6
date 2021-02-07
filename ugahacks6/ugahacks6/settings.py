@@ -27,6 +27,7 @@ SECRET_KEY = 'ajeswf90f7j=^z(li9gm&kz97keva0q@i&usemo@k7ynssxblo'
 DEBUG = True
 
 ALLOWED_HOSTS = [
+    '127.0.0.1',
     'phonic-monolith-304001.ue.r.appspot.com',
     'priceengine.online',
     'www.priceengine.online',
@@ -59,7 +60,9 @@ ROOT_URLCONF = 'ugahacks6.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [
+            os.path.join(BASE_DIR, 'templates'),
+        ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -123,4 +126,6 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
 STATIC_URL = '/static/'
-STATIC_ROOT = 'static'
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'static')
+]
