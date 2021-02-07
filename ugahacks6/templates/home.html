@@ -9,23 +9,25 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-    </head>
-    <body>
+    <body class="body">
+    <div class="background">
+        <body class="background">
         <header>
-            <a href="#" target="blank" class="fa fa-github fa-4x" id="icons"></a>
+            <a href="https://github.com/fahimtran/ugahacks6" target="blank" class="fa fa-github fa-4x" id="icons"></a>
         </header>
 
         <main>
             <img class="logo" src="{% static 'resources/logo.png' %}">
             <form class="example text-center" >
                 <input type="text" placeholder="Search.." name="search">
-                <button class="submit" type="submit"><i class="fa fa-search"></i></button>
+                <button class="fa fa-search"></button>
             </form>
 
             <div class="query">
                 <img src="#">
                 <span class="float">
+                    <h5>Searched Item Name</h5>
+
                     <h5>Minimum Price:
                         <a href="#">$</a>
                     </h5>
@@ -37,8 +39,8 @@
             </div>
         </main>
 
-        <footer>
-        </footer>
-    </body>
+        </body>
+    </div>
+
 
 </html>

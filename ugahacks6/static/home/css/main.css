@@ -1,4 +1,4 @@
-body {
+.body {
     font-family: "Poppins"!important;
     padding: 40px;
     background: linear-gradient(270deg, #4a6de5, #9eafe6, #002082);
@@ -7,6 +7,7 @@ body {
     -moz-animation: AnimationName 30s ease infinite;
     -o-animation: AnimationName 30s ease infinite;
     animation: AnimationName 30s ease infinite;
+    z-index: -1;
 }
 
 @-webkit-keyframes AnimationName {
@@ -30,6 +31,15 @@ body {
     100%{background-position:0% 50%}
 }
 
+.background {
+    position: relative;
+    left: 0px;
+    top: 0px;
+    background-image: url("../../resources/background.png");
+    background-repeat: repeat;
+    height: 88vh;
+}
+
 .fa-github {
     color: black;
     text-decoration: none;
@@ -44,6 +54,18 @@ button:hover {
     background-color:#eedf0e;
 }
 
+.fa-search {
+        border-radius: 20px;
+    width: 50px;
+
+}
+
+button {
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+}
+
 .logo {
     display: block;
     margin-left: auto;
@@ -52,9 +74,10 @@ button:hover {
 }
 
 input {
-    padding: 10px;
-    width: 35%;
-    border-radius: 10px;
+    padding: 15px;
+    width: 40%;
+    height: 40px;
+    border-radius: 20px;
 }
 
 form {
@@ -70,6 +93,7 @@ form {
     position: center;
     background-color: #f8f8ff;
     height: 300px;
+    display: none;
 }
 
 h5{
