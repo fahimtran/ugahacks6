@@ -1,6 +1,6 @@
 body {
     font-family: "Poppins"!important;
-    padding: 20px;
+    padding: 40px;
     background: linear-gradient(270deg, #4a6de5, #9eafe6, #002082);
     background-size: 600% 600%;
     -webkit-animation: AnimationName 30s ease infinite;
@@ -41,7 +41,9 @@ body {
 }
 
 input {
-    width: 50%;
+    padding: 10px;
+    width: 35%;
+    border-radius: 10px;
 }
 
 form {
@@ -51,12 +53,12 @@ form {
 .query {
     border: 2px solid #447e9b;
     border-radius: 10px;
-    padding: 30px;
+    padding: 80px;
     margin: auto;
     width: 70%;
     position: center;
     background-color: #f8f8ff;
-    height: 150px;
+    height: 200px;
 }
 
 .float {
